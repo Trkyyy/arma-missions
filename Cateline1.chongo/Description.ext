@@ -1,0 +1,2 @@
+respawnOnStart = -1;
+disableChannels[] = { 0, 1, 2, 4, 5 };

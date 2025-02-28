@@ -1,0 +1,44 @@
+author			= "S. Bird";
+onLoadName		= "Operation Dusty Blood";
+onLoadMission	= "Awful joke placeholder";
+loadScreen		= "loadScreen.paa";
+overviewPicture = "loadScreen.paa";
+
+class Header
+{
+	gameType = "Zeus";	// Game type
+	minPlayers =  0;	// minimum number of players the mission supports
+	maxPlayers = 40;	// maximum number of players the mission supports
+};
+// class CfgFunctions {
+// 	class SB {
+// 		tag = "SB";
+
+// 		class BriefingTexts {
+// 			file = "text";
+// 			class diaryBackground {};
+// 			class diarySituation {};
+// 			class diaryMission {};
+// 			class diaryExecution {};
+// 			class diarySignals {};
+			
+// 		};
+// 		class Functions {
+// 			file = "functions";
+// 			class vicRespawn {};
+// 			class startMission {};
+// 			class artilery {};
+// 			class alarm {};
+// 		}
+// 		class TaskTexts {
+// 			file = "text"
+// 			class taskAirfieldMainText {};
+// 			class taskBunkerText {};
+// 			class taskIntelText {};
+// 			class taskCaptureText {};
+// 			class taskHostagesText {};
+// 			class taskRouteText {};
+// 			class taskMeetText {};
+// 		}
+// 	};
+// };

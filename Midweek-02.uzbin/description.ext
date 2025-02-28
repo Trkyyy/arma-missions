@@ -1,0 +1,23 @@
+author			= "S. Bird";
+onLoadName		= "Operation Daily Dust";
+onLoadMission	= "magnificient rock with artifacts around it";
+loadScreen		= "loadScreen.paa";
+overviewPicture = "loadScreen.paa";
+
+class Header
+{
+	gameType = "Zeus";	// Game type
+	minPlayers =  0;	// minimum number of players the mission supports
+	maxPlayers = 40;	// maximum number of players the mission supports
+};
+
+class CfgFunctions {
+	class SB {
+		tag = "SB";
+
+		class Functions {
+			file = "functions";
+			class ambushTrigger {};
+		}
+	};
+};

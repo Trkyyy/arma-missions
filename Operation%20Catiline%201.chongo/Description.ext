@@ -1,0 +1,5 @@
+respawnOnStart = -1;
+disableChannels[] = { 0, 1, 2, 4, 5 };
+enableDebugConsole[] = {
+    "76561197982962878"
+};
