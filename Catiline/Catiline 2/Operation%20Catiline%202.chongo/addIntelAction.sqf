@@ -10,6 +10,6 @@ params ["_object"]; // Accept the object as a parameter
 _object addAction [
     "Gather Intel", // Title of the action
     {
-		["intelTask", "Succeeded"] call BIS_fnc_taskSetState;
+		["intelTask2", "Succeeded"] call BIS_fnc_taskSetState;
 	}
 ];
