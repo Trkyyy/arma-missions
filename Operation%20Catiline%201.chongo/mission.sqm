@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=3772;
+		nextID=3775;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=43;
+		nextID=48;
 	};
 	class Camera
 	{
-		pos[]={5564.4634,291.55646,4606.6191};
-		dir[]={0.73463476,-0.66118991,-0.15219799};
-		up[]={0.64744306,0.7502166,-0.13413459};
-		aside[]={-0.20287055,3.3003744e-07,-0.97921652};
+		pos[]={4230.1431,240.21074,5017.1406};
+		dir[]={0.84664547,-0.086963549,-0.52500379};
+		up[]={0.073907293,0.99621147,-0.045829818};
+		aside[]={-0.52700031,3.7252903e-09,-0.84986514};
 	};
 };
 binarizationWanted=0;
@@ -98,7 +98,8 @@ addons[]=
 	"A3_Structures_F_Civ_InfoBoards",
 	"cba_xeh",
 	"A3_Structures_F_Furniture",
-	"ace_sitting"
+	"ace_sitting",
+	"A3_Structures_F_Mil_Flags"
 };
 class AddonsMetaData
 {
@@ -1055,7 +1056,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=615;
+		items=616;
 		class Item0
 		{
 			dataType="Marker";
@@ -24257,8 +24258,6 @@ class Mission
 			class Attributes
 			{
 				onActivation="[] execVM ""mfs.sqf"";" \n "[] execVM ""attackLiffey.sqf"";" \n "[] execVM ""spawnHeliAttack.sqf"";";
-				sizeA=300;
-				sizeB=300;
 				sizeC=0;
 				activationBy="GUER";
 			};
@@ -87227,6 +87226,7 @@ class Mission
 					};
 					id=3727;
 					type="CUP_O_INS_Crew";
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -87507,6 +87507,7 @@ class Mission
 					};
 					id=3729;
 					type="CUP_O_INS_Crew";
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -87646,6 +87647,7 @@ class Mission
 					};
 					id=3730;
 					type="CUP_O_INS_Crew";
+					atlOffset=-7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -87785,7 +87787,7 @@ class Mission
 					};
 					id=3731;
 					type="CUP_O_INS_Crew";
-					atlOffset=1.5258789e-05;
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -88205,6 +88207,7 @@ class Mission
 					};
 					id=3734;
 					type="CUP_O_INS_Crew";
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -88634,6 +88637,7 @@ class Mission
 					};
 					id=3737;
 					type="CUP_O_INS_Crew";
+					atlOffset=-7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -88773,7 +88777,7 @@ class Mission
 					};
 					id=3738;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.0517578e-05;
+					atlOffset=2.2888184e-05;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -88824,6 +88828,7 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=3726;
+			atlOffset=7.6293945e-06;
 		};
 		class Item605
 		{
@@ -92397,6 +92402,22 @@ class Mission
 			{
 			};
 			id=3770;
+		};
+		class Item615
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={4395.8477,65.366035,4914.6421};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=3774;
+			type="Flag_UNO_F";
+			atlOffset=0.0026702881;
 		};
 	};
 	class Connections
