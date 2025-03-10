@@ -6,10 +6,8 @@ _mortarGroup = {
 
 // Exit if no group was found
 if (isNull _mortarGroup) exitWith {
-    hint "No group with callsign 'Mortar1' found on OPFOR side.";
     [] // Return an empty array
 };
-s
 
 private _mortarUnits = units _mortarGroup; // Get all units in the Mortar1 group
 private _pos1 = [5619, 4623, 0];  
@@ -34,7 +32,7 @@ private _fireMortar = {
     } forEach _mortars;
 };
 
-sleep 2;
+sleep 400;
 
 // Fire at first position
 [_mortarUnits, _pos1] call _fireMortar;
