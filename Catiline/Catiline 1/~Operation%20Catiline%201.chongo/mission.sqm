@@ -24,14 +24,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2775.9871,47.731297,2867.9653};
-		dir[]={-0.050966471,-0.47493154,-0.87854922};
-		up[]={-0.027505565,0.88002092,-0.47413775};
-		aside[]={-0.99832338,3.8126018e-09,0.057915635};
+		pos[]={2801.051,62.826908,2871.0012};
+		dir[]={-0.7791841,-0.51402169,-0.3586835};
+		up[]={-0.46692491,0.85777712,-0.21494055};
+		aside[]={-0.4181546,0,0.90837586};
 	};
 };
 binarizationWanted=0;
-sourceName="Operation%20Catiline%201";
+sourceName="~Operation%20Catiline%201";
 addons[]=
 {
 	"A3_Ui_F",
@@ -92553,7 +92553,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2780.228,42.016907,2863.1606};
+				position[]={2780.8,42.04224,2864.3374};
 				angles[]={6.2665191,2.0432723,0.010000871};
 			};
 			side="Empty";
@@ -92563,15 +92563,14 @@ class Mission
 			};
 			id=3782;
 			type="Land_CampingTable_small_F";
-			atlOffset=3.8146973e-06;
 		};
 		class Item616
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={2780.241,42.690903,2863.0713};
-				angles[]={6.2665191,2.0220861,0.010000871};
+				position[]={2780.813,42.71624,2864.248};
+				angles[]={6.2665176,2.0220861,0.010000736};
 			};
 			side="Empty";
 			class Attributes

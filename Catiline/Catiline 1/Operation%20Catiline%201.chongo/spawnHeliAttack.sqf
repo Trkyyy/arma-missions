@@ -34,43 +34,67 @@ private _planeStartPos = [5913, 11000, 500]; // Spawn a bit ahead of the heli at
 
 
 // The below is terrible, I know
-
 // Spawn the attacking plane
-private _plane = createVehicle [_planeType, _heliStartPos, [], 0, "FLY"];
+private _plane = createVehicle [_planeType, [2630.44,10747.7,0], [], 0, "FLY"];
 private _planePilot = createVehicleCrew _plane;
 
-private _planeStartPos2 = [5960, 11000, 500]; // Spawn a bit ahead of the heli at 500m altitude
 // Spawn the attacking plane
-_heliStartPos set [0, _heliStartPos select 0 + 50];
-// private _plane2 = createVehicle [_planeType, _planeStartPos2, [], 0, "FLY"];
-// // Create a pilot for the plane
-// private _planePilot2 = createVehicleCrew _plane2;
-
 _plane setDir 180; // Point roughly SE
 _plane setVelocity [150,-75,0];
+_plane flyInHeight 200;
 // _plane2 setDir 180; // Point roughly SE
 // _plane2 setVelocity [150,-75,0];
 
-// Order the plane to attack the helicopter
-private _wpAttack = _planePilot addWaypoint [[5913, 10500, 100], 0];
-_wpAttack setWaypointType "DESTROY"; // Seek and destroy
-_wpAttack setWaypointCombatMode "RED"; // Engage at will
-_wpAttack setWaypointSpeed "FULL";
+// Set the chaser to chase and destroy the target
+_chaserGroup = group driver _plane;
 
-// Order the plane to attack the helicopter
-// private _wpAttack2 = _planePilot2 addWaypoint [[5913, 10500, 100], 0];
-// _wpAttack2 setWaypointType "DESTROY"; // Seek and destroy
-// _wpAttack2 setWaypointCombatMode "RED"; // Engage at will
-// _wpAttack2 setWaypointSpeed "FULL";
+// Set the chaser's behavior and combat mode
+_chaserGroup setBehaviour "COMBAT";
+_chaserGroup setCombatMode "RED";
 
-sleep 8;
-while {alive _plane && alive _heli} do {
-    if (alive _plane) then {
-        _wpAttack setWaypointPosition [getPos _heli, 0];
+// Assign the target to the chaser
+_chaserGroup reveal [_heli, 4];
+// Command the chaser to move to the target's position and engage
+_chaserGroup move getPos _heli;
+
+// Monitor the chase and destruction
+waitUntil {
+    // Update the chaser's move command to the target's current position
+    _chaserGroup move getPos _heli;
+
+    // Check if the target is in range and fire at it
+    if (_plane distance _heli < 2000) then {
+        (driver _plane) fireAtTarget [_heli, "weapon"];
     };
 
-    // if (alive _plane2) then {
-    //     _wpAttack2 setWaypointPosition [getPos _heli, 0];
-    // };
-    sleep 8; // Adjust the delay as needed
+    // Exit the loop if the target or chaser is destroyed
+    sleep 1;
+    !alive _heli || !alive _plane;
 };
+
+
+// // Order the plane to attack the helicopter
+// private _wpAttack = _planePilot addWaypoint [[5913, 10500, 100], 0];
+// _wpAttack setWaypointType "DESTROY"; // Seek and destroy
+// _wpAttack setWaypointCombatMode "RED"; // Engage at will
+// _wpAttack setWaypointSpeed "FULL";
+
+// // Order the plane to attack the helicopter
+// // private _wpAttack2 = _planePilot2 addWaypoint [[5913, 10500, 100], 0];
+// // _wpAttack2 setWaypointType "DESTROY"; // Seek and destroy
+// // _wpAttack2 setWaypointCombatMode "RED"; // Engage at will
+// // _wpAttack2 setWaypointSpeed "FULL";
+// // have the yak know where the plane is
+// _plane reveal [_heli, 4];
+
+// // sleep 8;
+// // while {alive _plane && alive _heli} do {
+// //     if (alive _plane) then {
+// //         _wpAttack setWaypointPosition [getPos _heli, 0];
+// //     };
+
+// //     // if (alive _plane2) then {
+// //     //     _wpAttack2 setWaypointPosition [getPos _heli, 0];
+// //     // };
+// //     sleep 8; // Adjust the delay as needed
+// // };

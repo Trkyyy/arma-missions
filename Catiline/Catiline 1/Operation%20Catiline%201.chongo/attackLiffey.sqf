@@ -5,7 +5,7 @@ sleep 400;
 
 {
 	_unitName = _units select _forEachIndex;
-	systemChat format ["%1 index is %2", _forEachIndex, _unitName];
+	//systemChat format ["%1 index is %2", _forEachIndex, _unitName];
 	_unit = {
 		if (groupID _x == _unitName) exitWith { _x };
 		objNull
@@ -18,5 +18,5 @@ sleep 400;
 
     _destination = _x;
     _unit move _destination;
-    systemChat format ["%1 is moving to %2", _unit, _destination];
+    //systemChat format ["%1 is moving to %2", _unit, _destination];
 } forEach _destinations;
