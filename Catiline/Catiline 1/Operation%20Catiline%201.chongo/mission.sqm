@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={2775.9871,47.731297,2867.9653};
-		dir[]={-0.050966471,-0.47493154,-0.87854922};
-		up[]={-0.027505565,0.88002092,-0.47413775};
-		aside[]={-0.99832338,3.8126018e-09,0.057915635};
+		pos[]={2791.877,76.5131,2887.3958};
+		dir[]={-0.45679331,-0.63301188,-0.6250087};
+		up[]={-0.37351748,0.77414215,-0.51106632};
+		aside[]={-0.80735666,0,0.59006393};
 	};
 };
 binarizationWanted=0;
@@ -1073,6 +1073,32 @@ class CustomAttributes
 		};
 		class Attribute1
 		{
+			property="ENH_Briefing_Independent_Mission";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Independent_Mission'; waitUntil {!isNull player}; if (side player == independent) then {sleep 0.2; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="Your primary objective is to protect FOB Liffey, and the diplomatic mission taking place there.  " \n " <br/><br/>" \n " " \n "In the event that we are attacked, your tasking will change. Your priorities in this case are as follows.   <br/>" \n "1. Defend FOB Liffey from immediate danger <br/>" \n "2. Liquidise Katangan forces to the south of the operation area. This will allow us to focus on Swagga, which contains the bulk of Katangan forces. " \n "<br/>3. Bolster the blocking force at Elsaville and defend this location " \n "";
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ENH_Briefing_Independent_Situation";
+			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_Independent_Situation'; waitUntil {!isNull player}; if (side player == independent) then {sleep 0.1; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
+			class Value
+			{
+				class data
+				{
+					singleType="STRING";
+					value="On 14 July 1960, the UN Security Council adopted Resolution 143, calling for total Belgian withdrawal from the Congo and their replacement with a UN-commanded force.  " \n " <br/><br/>" \n "There are two main elements disturbing the peace in the Congo. Firstly, not long after Belgian withdrawal, two secessionist movements began, Katanga and South Kasai. These secessionist movements have attracted many Belgian mercenaries, who are taking an active role in the fighting. " \n "  <br/><br/>" \n "" \n "Secondly, a power struggle took place for control of the Republic of the Congo through the summer of 1960, culminating in a military coup by Mobutu Sese Seko, who still controls the government. The UN recognises this as the official government of the Republic of the Congo. As a result of this coup, the Free Republic of the Congo was formed in the east of the country. " \n "  <br/><br/>" \n "It is now September 1961. We are stationed along the border between the Republic of the Congo and Katanga. Currently fighting between the two sides is limited to skirmishes, and UN forces are yet to be caught up in this. " \n "  <br/><br/>" \n "" \n "This is our operational area. We have been deployed in order to ensure the peaceful completion of ceasefire talks between UN, Congolese, and Katangan negotiators. These negotiations will take place at FOB Liffey. We currently await the arrival of the Katangan representative, who is, for lack of a better word, late. We have our suspicions that the Katangans have only agreed to these talks in order to stall.  " \n " <br/><br/>" \n " " \n "In the event that this is true, and Katangan forces escalate the situation, it is important for you to understand the disposition of UN and Katangan forces in the area. You will garrison FOB Liffey. There are two small UN forces manning defensive positions to the east and south of FOB Liffey. Our headquarters are located in Chongo. Intelligence suggests that there are 3 company sized Katangan elements to the South East of FOB Liffey, likely with mortar support. If conflict breaks out, it seems likely to us that these elements will move into the surrounding hills. To the north we have the main Katangan force in the area, situated in and around Swaggah. A UN blocking force is in place around Elsaville to protect our northern flank.  " \n "  <br/><br/>" \n "" \n "We hold out hope that this situation will be resolved peacefully, a hope that is bolstered by the news that the UN Secretary-General himself, Dag Hammarskjöld, is on route to the area to aid in this diplomatic mission.  " \n "";
+				};
+			};
+		};
+		class Attribute3
+		{
 			property="ENH_Briefing_BLUFOR_Mission";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Mission'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.2; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_MISSION_TITLE', _this call BIS_fnc_localize]]}}};";
 			class Value
@@ -1084,7 +1110,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
+		class Attribute4
 		{
 			property="ENH_Briefing_BLUFOR_Situation";
 			expression="if (!is3DEN && hasInterface && _value != '') then {_value spawn {scriptName 'ENH_Briefing_BLUFOR_Situation'; waitUntil {!isNull player}; if (side player == west) then {sleep 0.1; player createDiaryRecord ['Diary', [localize 'STR_A3_DIARY_SITUATION_TITLE', _this call BIS_fnc_localize]]}}};";
@@ -1097,7 +1123,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=3;
+		nAttributes=5;
 	};
 };
 class Mission
