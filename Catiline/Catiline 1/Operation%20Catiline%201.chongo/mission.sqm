@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=63;
+		nextID=68;
 	};
 	class Camera
 	{
 		pos[]={2789.1099,70.27475,2904.6401};
-		dir[]={-0.36377251,-0.27846318,-0.88889134};
-		up[]={-0.10546875,0.96044672,-0.25771734};
-		aside[]={-0.92549801,1.6205013e-07,0.37875253};
+		dir[]={-0.36418781,-0.43757612,-0.822128};
+		up[]={-0.17722774,0.89918131,-0.40007898};
+		aside[]={-0.91430712,0,0.40502149};
 	};
 };
 binarizationWanted=0;
@@ -39,6 +39,7 @@ addons[]=
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Structures_F_Mil_Cargo",
 	"A3_Structures_F_EPA_Civ_Constructions",
+	"emr_main",
 	"ace_logistics_wirecutter",
 	"ace_concertina_wire",
 	"A3_Structures_F_EPA_Mil_Scrapyard",
@@ -93,6 +94,7 @@ addons[]=
 	"sp_fwa_bren",
 	"sp_fwa_hipower",
 	"CUP_Weapons_LeeEnfield",
+	"squad_lee_enfield_Cup",
 	"reaperCrew_SimpleObjects",
 	"A3_Structures_F_Mil_BagBunker",
 	"CUP_Misc_e_Config",
@@ -110,7 +112,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=58;
+		items=60;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -141,311 +143,324 @@ class AddonsMetaData
 		};
 		class Item4
 		{
+			className="emr_main";
+			name="Enhanced Movement Rework";
+			author="Simplex Team";
+			url="https://github.com/SceptreOfficial/Enhanced-Movement-Rework";
+		};
+		class Item5
+		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item5
+		class Item6
 		{
 			className="ace_concertina_wire";
 			name="ACE3 - Concertina Wire";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item6
+		class Item7
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item7
+		class Item8
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item9
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item9
+		class Item10
 		{
 			className="CUP_CAStructures_E_Mil";
 			name="CUP_CAStructures_E_Mil";
 		};
-		class Item10
+		class Item11
 		{
 			className="CUP_CAMisc_E_WF";
 			name="CUP_CAMisc_E_WF";
 		};
-		class Item11
+		class Item12
 		{
 			className="CUP_WheeledVehicles_M151";
 			name="M151A2";
 			author="Cleggy";
 		};
-		class Item12
+		class Item13
 		{
 			className="reaperCrew_Logistics";
 			name="reaperCrew_Logistics";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item16
+		class Item17
 		{
 			className="CUP_Creatures_Military_Chedaki";
 			name="CUP_Creatures_Military_Chedaki";
 		};
-		class Item17
+		class Item18
 		{
 			className="sp_fwa_fal_commonwealth";
 			name="sp_fwa_fal_commonwealth";
 		};
-		class Item18
+		class Item19
 		{
 			className="sp_fwa_fal_magazines";
 			name="sp_fwa_fal_magazines";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="acre_main";
 			name="ACRE2 - Main";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item21
+		class Item22
 		{
 			className="CUP_Weapons_NVG";
 			name="CUP_Weapons_NVG";
 		};
-		class Item22
+		class Item23
 		{
 			className="simc_uaf_68_core";
 			name="simc_uaf_68_core";
 		};
-		class Item23
+		class Item24
 		{
 			className="simc_mc_67_core";
 			name="simc_mc_67_core";
 		};
-		class Item24
+		class Item25
 		{
 			className="simc_svn_67_core";
 			name="simc_svn_67_core";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_Weapons_Ammunition";
 			name="CUP_Weapons_Ammunition";
 		};
-		class Item26
+		class Item27
 		{
 			className="CUP_Weapons_Grenades";
 			name="CUP_Weapons_Grenades";
 		};
-		class Item27
+		class Item28
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item28
+		class Item29
 		{
 			className="sp_fwa_Enfield";
 			name="sp_fwa_Enfield";
 		};
-		class Item29
+		class Item30
 		{
 			className="sp_fwa_no32";
 			name="sp_fwa_no32";
 		};
-		class Item30
+		class Item31
 		{
 			className="sp_fwa_mag58";
 			name="sp_fwa_mag58";
 		};
-		class Item31
+		class Item32
 		{
 			className="sp_fwa_machinegun_core";
 			name="sp_fwa_machinegun_core";
 		};
-		class Item32
+		class Item33
 		{
 			className="sp_fwa_riflegrenades";
 			name="sp_fwa_riflegrenades";
 		};
-		class Item33
+		class Item34
 		{
 			className="reaperCrew_CUP_SimpleObjects";
 			name="reaperCrew_CUP_SimpleObjects";
 		};
-		class Item34
+		class Item35
 		{
 			className="CUP_Weapons_AmmoBoxes";
 			name="CUP_Weapons_AmmoBoxes";
 		};
-		class Item35
+		class Item36
 		{
 			className="CUP_Creatures_StaticWeapons";
 			name="CUP_Creatures_StaticWeapons";
 		};
-		class Item36
+		class Item37
 		{
 			className="CUP_TrackedVehicles_NewM113";
 			name="CUP_TrackedVehicles_NewM113";
 		};
-		class Item37
+		class Item38
 		{
 			className="CUP_Creatures_Military_CDF";
 			name="CUP_Creatures_Military_CDF";
 		};
-		class Item38
+		class Item39
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item39
+		class Item40
 		{
 			className="A3_Characters_F_Orange";
 			name="Arma 3 Orange - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item40
+		class Item41
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item41
+		class Item42
 		{
 			className="UN_gear";
 			name="UN_gear";
 		};
-		class Item42
+		class Item43
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item43
+		class Item44
 		{
 			className="CUP_WheeledVehicles_Ural";
 			name="CUP_WheeledVehicles_Ural";
 		};
-		class Item44
+		class Item45
 		{
 			className="CUP_Weapons_FNFAL";
 			name="CUP_Weapons_FNFAL";
 		};
-		class Item45
+		class Item46
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item46
+		class Item47
 		{
 			className="acre_sys_prc148";
 			name="ACRE2 - AN/PRC-148";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item47
+		class Item48
 		{
 			className="acre_sys_prc343";
 			name="ACRE2 - AN/PRC-343";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item48
+		class Item49
 		{
 			className="sp_fwa_bren";
 			name="sp_fwa_bren";
 		};
-		class Item49
+		class Item50
 		{
 			className="sp_fwa_hipower";
 			name="sp_fwa_hipower";
 		};
-		class Item50
+		class Item51
 		{
 			className="CUP_Weapons_LeeEnfield";
 			name="CUP_Weapons_LeeEnfield";
 		};
-		class Item51
+		class Item52
+		{
+			className="squad_lee_enfield_Cup";
+			name="squad_lee_enfield_Cup";
+			author="amzingdogeyyy";
+		};
+		class Item53
 		{
 			className="reaperCrew_SimpleObjects";
 			name="reaperCrew_SimpleObjects";
 		};
-		class Item52
+		class Item54
 		{
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
-		class Item53
+		class Item55
 		{
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item54
+		class Item56
 		{
 			className="CUP_Editor_Buildings_Config";
 			name="CUP_Editor_Buildings_Config";
 		};
-		class Item55
+		class Item57
 		{
 			className="A3_Characters_F_AoW";
 			name="Arma 3 Art of War - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item56
+		class Item58
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item57
+		class Item59
 		{
 			className="A3_Missions_F_Oldman";
 			name="Arma 3 Old Man - Playable Content";
@@ -30122,7 +30137,6 @@ class Mission
 					};
 					id=1997;
 					type="CUP_O_INS_Crew";
-					atlOffset=0.0098266602;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -30404,7 +30418,6 @@ class Mission
 					};
 					id=1999;
 					type="CUP_O_INS_Crew";
-					atlOffset=0.22676849;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38025,7 +38038,7 @@ class Mission
 						position[]={7553.2588,68.352386,7581.4556};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						description="Rifleman";
@@ -38112,7 +38125,6 @@ class Mission
 					};
 					id=2122;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.950943;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38165,7 +38177,7 @@ class Mission
 						position[]={7552.7637,68.352386,7582.3467};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						description="Rifleman";
@@ -38252,7 +38264,6 @@ class Mission
 					};
 					id=2123;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.950943;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38303,7 +38314,6 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=2121;
-			atlOffset=3.950943;
 		};
 		class Item290
 		{
@@ -38320,7 +38330,7 @@ class Mission
 						position[]={7551.6787,68.352097,7574.1343};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						description="Rifleman";
@@ -38407,7 +38417,6 @@ class Mission
 					};
 					id=2125;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.9506531;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38460,7 +38469,7 @@ class Mission
 						position[]={7551.1836,68.351906,7575.0254};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						description="Rifleman";
@@ -38547,7 +38556,6 @@ class Mission
 					};
 					id=2126;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.9504623;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38598,7 +38606,6 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=2124;
-			atlOffset=3.9504623;
 		};
 		class Item291
 		{
@@ -38615,7 +38622,7 @@ class Mission
 						position[]={7566.4741,68.352386,7572.2422};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						description="Rifleman";
@@ -38702,7 +38709,6 @@ class Mission
 					};
 					id=2128;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.902092;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38755,7 +38761,7 @@ class Mission
 						position[]={7565.979,68.352386,7573.1333};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						description="Rifleman";
@@ -38842,7 +38848,6 @@ class Mission
 					};
 					id=2129;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.9146957;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -38893,7 +38898,6 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=2127;
-			atlOffset=3.9146957;
 		};
 		class Item292
 		{
@@ -38910,7 +38914,7 @@ class Mission
 						position[]={7561.3604,68.352386,7579.7593};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						description="Rifleman";
@@ -38997,7 +39001,6 @@ class Mission
 					};
 					id=2131;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.9464035;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39050,7 +39053,7 @@ class Mission
 						position[]={7560.8652,68.352386,7580.6504};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						description="Rifleman";
@@ -39137,7 +39140,6 @@ class Mission
 					};
 					id=2132;
 					type="CUP_O_INS_Crew";
-					atlOffset=3.9480591;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39188,7 +39190,6 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=2130;
-			atlOffset=3.9480591;
 		};
 		class Item293
 		{
@@ -39206,7 +39207,7 @@ class Mission
 						angles[]={0,3.2203333,0};
 					};
 					side="East";
-					flags=1;
+					flags=5;
 					class Attributes
 					{
 						description="Rifleman";
@@ -39293,7 +39294,6 @@ class Mission
 					};
 					id=2134;
 					type="CUP_O_INS_Crew";
-					atlOffset=8.036644;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39347,7 +39347,7 @@ class Mission
 						angles[]={0,3.5061305,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						description="Rifleman";
@@ -39434,7 +39434,6 @@ class Mission
 					};
 					id=2135;
 					type="CUP_O_INS_Crew";
-					atlOffset=7.988121;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -39485,7 +39484,6 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=2133;
-			atlOffset=7.988121;
 		};
 		class Item294
 		{
@@ -83525,7 +83523,7 @@ class Mission
 						angles[]={0,5.8207154,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						description="Rifleman";
@@ -83612,7 +83610,7 @@ class Mission
 					};
 					id=3580;
 					type="CUP_O_INS_Crew";
-					atlOffset=0.63028717;
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -83663,7 +83661,7 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=3579;
-			atlOffset=0.63028717;
+			atlOffset=7.6293945e-06;
 		};
 		class Item550
 		{
@@ -83681,7 +83679,7 @@ class Mission
 						angles[]={0,5.8207154,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						description="Rifleman";
@@ -83768,7 +83766,7 @@ class Mission
 					};
 					id=3582;
 					type="CUP_O_INS_Crew";
-					atlOffset=0.47827148;
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -83819,7 +83817,7 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=3581;
-			atlOffset=0.47827148;
+			atlOffset=7.6293945e-06;
 		};
 		class Item551
 		{
